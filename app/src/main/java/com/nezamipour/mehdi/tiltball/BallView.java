@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 
 public class BallView extends View {
 
-    private float mX;
-    private float mY;
+    float mX;
+    float mY;
     private int mRadius;
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
@@ -27,6 +27,7 @@ public class BallView extends View {
         this.mY = y;
         this.mRadius = r;
     }
+
 
     @Override
     protected void onDraw(Canvas canvas) {
